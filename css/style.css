@@ -8,6 +8,7 @@
     background-color: black;
     color: #f0eb30;
 }
+/*  */
 body{
     background-color: #f1fff0;
     display:flex;
@@ -17,6 +18,7 @@ body{
 .wrapper{
     flex:1;
 }
+/*  */
 h1{
     font-family: 'Noto Sans', sans-serif;
     font-style:normal;
@@ -68,11 +70,11 @@ p{
     font-weight: bolder;
     color: aliceblue;
     margin-bottom: 30px;
+    background: linear-gradient(11deg, #03a120 60%, #f0eb30);
 }
 
 /* Configuracion Carrusel en index*/
 .carousel-width{
-    
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
@@ -82,17 +84,20 @@ p{
     object-fit: cover;
     height: 32vw;
 }
-.carousel-caption p{
-    margin: none;
+
+.carousel-caption h5{
+    margin: auto;
+    background-color: #0000006b;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 18px;
     text-align: center;
     line-height: normal;
     letter-spacing: normal;
     word-spacing: normal;
+    width:max-content;
 }
 
 /*Configuracion del footer*/

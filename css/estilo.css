@@ -10,4 +10,117 @@
 *::selection {
   background-color: black;
   color: #f0eb30;
+}
+
+body {
+  background-color: #f1fff0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body .wrapper {
+  flex: 1;
+}
+body h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38px;
+  text-align: center;
+  color: #12708d;
+  margin-bottom: 20px;
+}
+body h2 {
+  margin-top: 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #12708d;
+  text-align: center;
+}
+body h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: auto;
+  text-align: left;
+  letter-spacing: 2px;
+  color: black;
+}
+body p {
+  margin: 15px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+header .navbar {
+  font-size: 18px;
+  font-weight: bolder;
+  color: aliceblue;
+  margin-bottom: 30px;
+  background: linear-gradient(11deg, #03a120 60%, #f0eb30);
+}
+header .navbar .varlogo {
+  width: 110px;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+footer {
+  list-style-type: none;
+}
+footer .redes {
+  display: flex;
+  background-color: rgb(52, 104, 90);
+  justify-content: flex-start;
+}
+footer .redes .redes_icon {
+  width: 48px;
+  height: 48px;
+  padding-left: 15px;
+  margin-top: 2px;
+}
+
+.gridCenter {
+  display: flex;
+  justify-content: center;
+}
+.gridCenter .gridContenedor {
+  width: 70vw;
+  height: 50vh;
+  display: grid;
+  background-color: rgba(255, 251, 0, 0.0666666667);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "ec  ec   ec   ec   .     fe    fe    fe    .     ho   ho   ho" ".   .    .    .    .     tr    tr    tr    tr    pt   pt   pt" ".   .    .    .    .     .     .     .     .     re   re   re";
+}
+.gridCenter .gridContenedor .caja {
+  margin: 10px;
+}
+.gridCenter .gridContenedor .caja .elijaCancha {
+  grid-area: ec;
+}
+.gridCenter .gridContenedor .caja .fecha {
+  grid-area: fe;
+}
+.gridCenter .gridContenedor .caja .horario {
+  grid-area: ho;
+}
+.gridCenter .gridContenedor .caja .tiempoReserva {
+  grid-area: tr;
+}
+.gridCenter .gridContenedor .caja .precioTotal {
+  grid-area: pt;
+}
+.gridCenter .gridContenedor .caja .reservar {
+  margin-top: 26%;
+  margin-left: 10%;
+  grid-area: re;
 }/*# sourceMappingURL=estilo.css.map */

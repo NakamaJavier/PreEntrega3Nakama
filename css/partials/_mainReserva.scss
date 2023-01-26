@@ -1,0 +1,41 @@
+.gridCenter{
+    display: flex;
+    justify-content: center;
+    .gridContenedor{
+        width: 70vw;
+        height: 50vh;
+        display: grid;
+        background-color: #fffb0011;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "ec  ec   ec   ec   .     fe    fe    fe    .     ho   ho   ho"
+        ".   .    .    .    .     tr    tr    tr    tr    pt   pt   pt"
+        ".   .    .    .    .     .     .     .     .     re   re   re";
+        .caja{
+            margin: 10px;
+            .elijaCancha{
+                grid-area: ec;
+            }
+            .fecha{
+                grid-area: fe
+            }
+            .horario{
+                grid-area: ho;
+            }
+            .tiempoReserva{
+                grid-area: tr;
+            }
+            .precioTotal{
+                grid-area: pt;
+            }
+            .reservar{
+                margin-top: 26%;
+                margin-left: 10%;
+                grid-area: re;
+            }
+        }
+    }
+}
+
+

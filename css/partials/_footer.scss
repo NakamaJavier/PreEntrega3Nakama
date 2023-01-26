@@ -1,0 +1,15 @@
+footer{
+    list-style-type: none;
+    .redes{
+        display: flex; 
+        background-color: rgb(52, 104, 90);
+        justify-content: flex-start;
+        .redes_icon{
+            width: 48px;
+            height: 48px;
+            padding-left: 15px;
+            margin-top: 2px;
+        }
+    }
+    
+}
