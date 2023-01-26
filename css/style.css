@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,700&family=Poppins:ital@1&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+*::selection{
+    background-color: white;
+    color: 
+}
+body{
+    background-color: #f1fff0;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh; 
+}
+.wrapper{
+    flex:1;
+}
+h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-style:normal;
+    font-weight:900;
+    font-size:38px;
+    text-align:center;
+    color: #12708d;
+    margin-bottom: 20px;
+}
+h2{
+    margin-top:10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #12708d;
+    text-align:center;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: auto;
+    text-align: left;
+    letter-spacing: 2px;
+    color: black;
+}
+p{
+    margin: 15px;
+    color: #000108;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+/* Navbar modificaciones de BootStrap*/
+.varlogo{
+    width: 110px;
+    background-color:rgba(0, 0, 0, 0.010);
+}
+
+.navbar{
+    font-size: 18px;
+    font-weight: bolder;
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+
+/* Configuracion Carrusel en index*/
+.carousel-width{
+    
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+}
+.carousel img{
+    object-fit: cover;
+    height: 32vw;
+}
+.carousel-caption p{
+    margin: none;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+/*Configuracion del footer*/
+footer{
+    list-style-type: none;
+}
+.redes{
+    display: flex; 
+    background-color: rgb(52, 104, 90);
+    justify-content: flex-start;
+}
+.redes_icon{
+    width: 48px;
+    height: 48px;
+    padding-left: 15px;
+    margin-top: 2px;
+}
+
+/*Configuracion pagina Reserva */
+.gridCenter{
+    display: flex;
+    justify-content: center;
+}
+.gridContenedor{
+    width: 70vw;
+    height: 50vh;
+    display: grid;
+    background-color: #fffb0011;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "ec  ec   ec   ec   .     fe    fe    fe    .     ho   ho   ho"
+    ".   .    .    .    .     tr    tr    tr    tr    pt   pt   pt"
+    ".   .    .    .    .     .     .     .     .     re   re   re";
+}
+.caja{
+    margin: 10px;
+}
+.elijaCancha{
+    grid-area: ec;
+}
+.fecha{
+    grid-area: fe
+}
+.horario{
+    grid-area: ho;
+}
+.tiempoReserva{
+    grid-area: tr;
+}
+.precioTotal{
+    grid-area: pt;
+}
+.reservar{
+    margin-top: 26%;
+    margin-left: 10%;
+    grid-area: re;
+}
+
+/*Configuracion pagina de contacto */
+
+.gridContacto{
+    display: grid;
+    align-items: center;  
+    margin-top: 20px;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "tel1   tel2"
+    "tel1   tel3"
+    "wapp  wapp1"
+    "mail  mail1";
+    margin-bottom: 20px;
+}
+.info_contacto{
+    margin:5px;
+}
+.tel1{
+    grid-area:tel1;   
+}
+.tel2{
+    grid-area:tel2;
+}
+.tel3{
+    grid-area:tel3;
+}
+.whatsapp{
+    grid-area:wapp;
+}
+.whatsapp1{
+    grid-area:wapp1;
+}
+.email{
+    grid-area:mail;
+}
+.email1{
+    grid-area:mail1;
+}
+.ubicacion{
+    display: grid;
+    justify-items: center
+}
+.ubicacion h4{
+    text-align: center;
+}
+.ubicacion a{
+    font-weight: 700;
+}
+/*Configuracion de pagina productos */
+.gridProductos{
+    display: grid;
+    width: 97%;
+    align-items: center;  
+    justify-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    grid-template-columns:repeat(8,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "caja1 caja2  caja3  caja4  caja5  caja6  caja7  caja8 "
+    "caja9 caja10 caja11 caja12 caja13 caja14 caja15    .  ";
+}
+
+.caja1{
+    grid-area:caja1;
+}
+.caja2{
+    grid-area:caja2;
+}
+.caja3{
+    grid-area:caja3;
+}
+.caja4{
+    grid-area:caja4;
+}
+.caja5{
+    grid-area:caja5;
+}
+.caja6{
+    grid-area:caja6;
+}
+.caja7{
+    grid-area:caja7;
+}
+.caja8{
+    grid-area:caja8;
+}
+.caja9{
+    grid-area:caja9;
+}
+.caja10{
+    grid-area:caja10;
+}
+.caja11{
+    grid-area:caja11;
+}
+.caja12{
+    grid-area:caja12;
+}
+.caja13{
+    grid-area:caja13;
+}
+.caja14{
+    grid-area:caja14;
+}
+.caja15{
+    grid-area:caja15;
+}
+.caja16{
+    grid-area:caja16;
+}
+
+.caja_producto:hover{
+    /* Agrego efecto de escalado a las cajas de producto*/
+    scale: 130%;
+}
+
+.box_venta{
+    background-color: white;
+    height: 270px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: grid;
+    align-items: start;
+    justify-content: normal;
+    grid-template-rows: 186px 58px 26px;
+    margin:10px;
+}
+
+.box_venta_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.gridProductos img{
+    height: 180px;
+    width: auto;
+    max-width: 150px;
+    margin: 3px;
+}
+.gridProductos div h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 0px;
+    color: #16256c;
+}
+.gridProductos div h3{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 0px;
+    color: #000000;
+}
+
+/*Configuracion pagina Nosotros */
+.flexNosotros{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.flexqs{
+    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flexnc{
+    margin-top: 8vh;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.textns{
+    width: 33%;
+}
+.imgns{
+    width: 28%;
+}
+.imgns img{
+    width: 100%;
+    object-fit: cover;
+}
+/*Aplico MediaQueries en index, reserva, nosotros y productos */
+
+@media screen and (max-width: 1770px){
+    /*para productos*/
+    .gridProductos{
+        grid-template-columns:repeat(7,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3  caja4  caja5  caja6  caja7 "
+        "caja8  caja9  caja10 caja11 caja12 caja13 caja14"
+        "caja15  .      .       .       .      .      .  ";
+    }
+    /*para nosotros */
+    .textns{
+        width: 37%;
+    }
+    .imgns{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1550px){
+    /*para productos*/
+    .gridProductos{
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3  caja4  caja5  caja6 "
+        "caja7  caja8  caja9  caja10 caja11 caja12"
+        "caja13 caja14 caja15  .      .       .   ";
+    }
+    .textns{
+        width: 38%;
+    }
+    .imgns{
+        width: 32%;
+    }
+}
+@media screen and (max-width: 1350px){
+    /*para productos*/
+    .gridProductos{
+        grid-template-columns:repeat(5,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3  caja4  caja5 "
+        "caja6  caja7  caja8  caja9  caja10"
+        "caja11 caja12 caja13 caja14 caja15";
+    }
+    /*para nosotros */
+    .textns{
+        width: 40%;
+    }
+    .imgns{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1120px){
+    /*para productos*/
+    .gridProductos{
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3  caja4 "
+        "caja5  caja6  caja7  caja8 "
+        "caja9  caja10 caja11 caja12"
+        "caja13 caja14 caja15  .    ";
+    }
+    /*para index */
+    .carousel-width{
+        width: 100vw;
+    }
+    .carousel img{
+        height: 40vw;
+    }
+    /*para nosotros */
+    .flexNosotros{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .flexqs{
+        display:block;
+    }
+    .flexnc{
+        margin-top: 8vh;
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .textns{
+        width: auto;
+    }
+    .imgns{
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .imgns img{
+        width: 80%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 890px){
+    /*para productos*/
+    .gridProductos{
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3 "
+        "caja4  caja5  caja6 "
+        "caja7  caja8  caja9 "
+        "caja10 caja11 caja12"
+        "caja13 caja14 caja15";
+    }
+    /*para reserva*/
+    .gridContenedor{
+        width: 80vw;
+        height: 50vh;
+        display: grid;
+        background-color: #fffb0011;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "ec  ec   ec   .  "
+        "fe  fe   ho   ho "
+        "tr  tr   tr    . "
+        "pt  pt   .     re";
+    }
+    
+}
+
+@media screen and (max-width: 675px){
+    /*para productos*/
+    .gridProductos{
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-template-areas: 
+        "caja1  caja2 "
+        "caja3  caja4 "
+        "caja5  caja6 "
+        "caja7  caja8 "
+        "caja9  caja10"
+        "caja11 caja12"
+        "caja13 caja14"
+        "caja15    .  ";      
+    }
+    /*para reserva*/
+    .reservar{
+        margin-top: 33%;
+    }
+}
+
+@media screen and (max-width: 455px){
+    /*para productos*/
+    .gridProductos{  
+        margin-top: 20px;
+        margin-left: 3px;
+        
+    }
+    .box_venta{
+        height: 270px;
+        width: 170px;
+        margin: 2px;
+        margin-bottom: 10px;
+    }
+    /*para reserva*/
+    .reservar{
+        margin-top: 35%;
+    }
+}
