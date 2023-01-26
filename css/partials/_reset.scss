@@ -1,0 +1,9 @@
+*{
+    margin:0;
+    padding:0;
+
+    &::selection{
+        background-color: black;
+        color: #f0eb30;
+    }
+}
