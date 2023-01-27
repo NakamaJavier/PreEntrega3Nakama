@@ -8,42 +8,28 @@ body{
         flex:1;       
     }
     h1{
-        font-family: 'Noto Sans', sans-serif;
-        font-style:normal;
+        @include fontTitles();
         font-weight:900;
         font-size:38px;
-        text-align:center;
-        color: #12708d;
         margin-bottom: 20px;
     }
     h2{
-        margin-top:10px;
-        font-family: 'Noto Sans', sans-serif;
-        font-style: normal;
+        @include fontTitles();
         font-weight: 800;
         font-size: 30px;
-        letter-spacing: 2px;
-        color: #12708d;
-        text-align:center;
+        margin-top:10px;
     }
     h3{
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
+        @include fontProp($fontRoboto,normal,600,15px,black);
         line-height: auto;
         text-align: left;
         letter-spacing: 2px;
-        color: black;
+        
     }
     p{
-        margin: 15px;
-        color: black;
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
+        @include fontProp($fontRoboto,normal,600,18px,black);
         text-align: justify;
         line-height: 20px;
+        margin: 15px;
     }
 }

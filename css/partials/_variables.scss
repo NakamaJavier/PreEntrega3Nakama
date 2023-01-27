@@ -4,3 +4,17 @@ $fontNoto: 'Noto Sans', sans-serif;
 $fontPoppins: 'Poppins', sans-serif;
 $fontRoboto:'Roboto', sans-serif;
 $hColor: #12708d;
+
+@mixin fontTitles{
+    font-family:$fontNoto;
+    font-style:normal;
+    text-align:center;
+    color: $hColor;
+}
+@mixin fontProp($family,$style,$weight,$size,$color){
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
