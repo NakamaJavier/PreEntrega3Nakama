@@ -9,11 +9,13 @@
         "caja15  .      .       .       .      .      .  ";
     }
     /*para nosotros */
-    .textns{
-        width: 37%;
-    }
-    .imgns{
-        width: 30%;
+    .flexNosotros{
+        .textns{
+            width: 37%;
+        }
+        .imgns{
+            width: 30%;
+        }
     }
 }
 
@@ -27,11 +29,13 @@
         "caja7  caja8  caja9  caja10 caja11 caja12"
         "caja13 caja14 caja15  .      .       .   ";
     }
-    .textns{
-        width: 38%;
-    }
-    .imgns{
-        width: 32%;
+    .flexNosotros{
+        .textns{
+            width: 38%;
+        }
+        .imgns{
+            width: 32%;
+        }
     }
 }
 @media screen and (max-width: 1350px){
@@ -45,11 +49,13 @@
         "caja11 caja12 caja13 caja14 caja15";
     }
     /*para nosotros */
-    .textns{
+    .flexNosotros{
+        .textns{
         width: 40%;
-    }
-    .imgns{
-        width: 35%;
+        }
+        .imgns{
+            width: 35%;
+        }
     }
 }
 
@@ -75,27 +81,27 @@
     .flexNosotros{
         margin-top: 30px;
         margin-bottom: 30px;
-    }
-    .flexqs{
-        display:block;
-    }
-    .flexnc{
-        margin-top: 8vh;
-        display:flex;
-        flex-direction: column-reverse;
-    }
-    .textns{
-        width: auto;
-    }
-    .imgns{
-        width: auto;
-        display: flex;
-        justify-content: center;
-    }
-    .imgns img{
-        width: 80%;
-        object-fit: cover;
-    }
+        .flexqs{
+            display:block;
+        }
+        .flexnc{
+            margin-top: 4vw;
+            display:flex;
+            flex-direction: column-reverse;
+        }
+        .textns{
+            width: auto;
+        }
+        .imgns{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 80%;
+                object-fit: cover;
+            }
+        }
+    } 
 }
 
 @media screen and (max-width: 890px){
