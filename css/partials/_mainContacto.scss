@@ -1,0 +1,49 @@
+.wrapper{
+    .gridContacto{
+        display: grid;
+        align-items: center;  
+        margin-top: 20px;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "tel1   tel2"
+        "tel1   tel3"
+        "wapp  wapp1"
+        "mail  mail1";
+        margin-bottom: 20px;
+        .info_contacto{
+            margin:5px;
+        }
+        .tel1{
+            grid-area:tel1;   
+        }
+        .tel2{
+            grid-area:tel2;
+        }
+        .tel3{
+            grid-area:tel3;
+        }
+        .whatsapp{
+            grid-area:wapp;
+        }
+        .whatsapp1{
+            grid-area:wapp1;
+        }
+        .email{
+            grid-area:mail;
+        }
+        .email1{
+            grid-area:mail1;
+        }
+    }
+    .ubicacion{
+        display: grid;
+        justify-items: center;
+        h4{
+            text-align: center;
+        }
+        a{
+            font-weight: 700;
+        }
+    }
+}

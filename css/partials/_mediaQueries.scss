@@ -1,0 +1,168 @@
+@media screen and (max-width: 1770px){
+    /*para productos*/
+    .gridProductos{
+        grid-template-columns:repeat(7,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3  caja4  caja5  caja6  caja7 "
+        "caja8  caja9  caja10 caja11 caja12 caja13 caja14"
+        "caja15  .      .       .       .      .      .  ";
+    }
+    /*para nosotros */
+    .textns{
+        width: 37%;
+    }
+    .imgns{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1550px){
+    /*para productos*/
+    .gridProductos{
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3  caja4  caja5  caja6 "
+        "caja7  caja8  caja9  caja10 caja11 caja12"
+        "caja13 caja14 caja15  .      .       .   ";
+    }
+    .textns{
+        width: 38%;
+    }
+    .imgns{
+        width: 32%;
+    }
+}
+@media screen and (max-width: 1350px){
+    /*para productos*/
+    .gridProductos{
+        grid-template-columns:repeat(5,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3  caja4  caja5 "
+        "caja6  caja7  caja8  caja9  caja10"
+        "caja11 caja12 caja13 caja14 caja15";
+    }
+    /*para nosotros */
+    .textns{
+        width: 40%;
+    }
+    .imgns{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1120px){
+    /*para productos*/
+    .gridProductos{
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3  caja4 "
+        "caja5  caja6  caja7  caja8 "
+        "caja9  caja10 caja11 caja12"
+        "caja13 caja14 caja15  .    ";
+    }
+    /*para index */
+    .carousel-width{
+        width: 100vw;
+    }
+    .carousel img{
+        height: 40vw;
+    }
+    /*para nosotros */
+    .flexNosotros{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .flexqs{
+        display:block;
+    }
+    .flexnc{
+        margin-top: 8vh;
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .textns{
+        width: auto;
+    }
+    .imgns{
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .imgns img{
+        width: 80%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 890px){
+    /*para productos*/
+    .gridProductos{
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "caja1  caja2  caja3 "
+        "caja4  caja5  caja6 "
+        "caja7  caja8  caja9 "
+        "caja10 caja11 caja12"
+        "caja13 caja14 caja15";
+    }
+    /*para reserva*/
+    .gridContenedor{
+        width: 80vw;
+        height: 50vh;
+        display: grid;
+        background-color: #fffb0011;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "ec  ec   ec   .  "
+        "fe  fe   ho   ho "
+        "tr  tr   tr    . "
+        "pt  pt   .     re";
+    }
+    
+}
+
+@media screen and (max-width: 675px){
+    /*para productos*/
+    .gridProductos{
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(8,1fr);
+        grid-template-areas: 
+        "caja1  caja2 "
+        "caja3  caja4 "
+        "caja5  caja6 "
+        "caja7  caja8 "
+        "caja9  caja10"
+        "caja11 caja12"
+        "caja13 caja14"
+        "caja15    .  ";      
+    }
+    /*para reserva*/
+    .reservar{
+        margin-top: 33%;
+    }
+}
+
+@media screen and (max-width: 455px){
+    /*para productos*/
+    .gridProductos{  
+        margin-top: 20px;
+        margin-left: 3px;
+        
+    }
+    .box_venta{
+        height: 270px;
+        width: 170px;
+        margin: 2px;
+        margin-bottom: 10px;
+    }
+    /*para reserva*/
+    .reservar{
+        margin-top: 35%;
+    }
+}

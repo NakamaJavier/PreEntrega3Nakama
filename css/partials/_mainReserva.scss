@@ -14,26 +14,26 @@
         ".   .    .    .    .     .     .     .     .     re   re   re";
         .caja{
             margin: 10px;
-            .elijaCancha{
-                grid-area: ec;
-            }
-            .fecha{
-                grid-area: fe
-            }
-            .horario{
-                grid-area: ho;
-            }
-            .tiempoReserva{
-                grid-area: tr;
-            }
-            .precioTotal{
-                grid-area: pt;
-            }
-            .reservar{
-                margin-top: 26%;
-                margin-left: 10%;
-                grid-area: re;
-            }
+        }
+        .elijaCancha{
+            grid-area: ec;
+        }
+        .fecha{
+            grid-area: fe
+        }
+        .horario{
+            grid-area: ho;
+        }
+        .tiempoReserva{
+            grid-area: tr;
+        }
+        .precioTotal{
+            grid-area: pt;
+        }
+        .reservar{
+            margin-top: 26%;
+            margin-left: 10%;
+            grid-area: re;
         }
     }
 }
