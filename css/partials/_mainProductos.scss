@@ -1,8 +1,6 @@
 .gridProductos{
-    display: grid;
+    @include gridProp(center,center,center);
     width: 97%;
-    align-items: center;  
-    justify-items: center;
     margin-top: 20px;
     margin-left: 10px;
     grid-template-columns:repeat(8,1fr);
@@ -11,31 +9,24 @@
     "caja1 caja2  caja3  caja4  caja5  caja6  caja7  caja8 "
     "caja9 caja10 caja11 caja12 caja13 caja14 caja15    .  ";
     img{
-        height: 180px;
-        width: auto;
+        @include size(auto,180px);
         max-width: 150px;
         margin: 3px;
     }
     div {
         h2{
-            font-family: 'Roboto', sans-serif;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 18px;
+            @include fontProp($fontRoboto,normal,bold,18px,#16256c);
             text-align: center;
             letter-spacing: 2px;
-            word-spacing: 0px;
-            color: #16256c;
+            margin: 0px 2px 0px 2px;
         }
         h3{
-            font-family: 'Roboto', sans-serif;
-            font-style: normal;
-            font-weight: 900;
-            font-size: 16px;
+            @include fontProp($fontRoboto,normal,900,16px,black);
             text-align: center;
             letter-spacing: 2px;
-            word-spacing: 0px;
-            color: #000000;
+            border-top: 1px solid rgba(0, 0, 0, 0.445);
+            padding-top: 4px;
+            width:150px;
         }
     }
     .caja_producto{
@@ -44,69 +35,21 @@
         scale: 130%;
         }
         .box_venta{
-            background-color: white;
-            height: 270px;
-            width: 200px;
+            @include gridProp(center,center,center);
+            @include size(200px,270px);
+            grid-template-rows: 183px 51px 35px;
             border: 1px solid #ddd;
-            border-radius: 4px;
-            display: grid;
-            align-items: start;
-            justify-content: normal;
-            grid-template-rows: 186px 58px 26px;
+            border-radius: 10px;
+            background-color: white;
             margin:10px;
             .box_venta_img{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+                @include flexProp(row,center,center);
             }
         }
     }
-    .caja1{
-        grid-area:caja1;
-    }
-    .caja2{
-        grid-area:caja2;
-    }
-    .caja3{
-        grid-area:caja3;
-    }
-    .caja4{
-        grid-area:caja4;
-    }
-    .caja5{
-        grid-area:caja5;
-    }
-    .caja6{
-        grid-area:caja6;
-    }
-    .caja7{
-        grid-area:caja7;
-    }
-    .caja8{
-        grid-area:caja8;
-    }
-    .caja9{
-        grid-area:caja9;
-    }
-    .caja10{
-        grid-area:caja10;
-    }
-    .caja11{
-        grid-area:caja11;
-    }
-    .caja12{
-        grid-area:caja12;
-    }
-    .caja13{
-        grid-area:caja13;
-    }
-    .caja14{
-        grid-area:caja14;
-    }
-    .caja15{
-        grid-area:caja15;
-    }
-    .caja16{
-        grid-area:caja16;
+    @for $item from 1 through 16{
+        .caja#{$item}{
+            grid-area:caja#{$item};
+        }
     }
 }

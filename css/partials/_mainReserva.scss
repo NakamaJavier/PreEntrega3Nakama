@@ -1,10 +1,8 @@
-.gridCenter{
-    display: flex;
-    justify-content: center;
+.flexCenter{
+    @include flexProp(row,center,center);
     .gridContenedor{
-        width: 70vw;
-        height: 50vh;
-        display: grid;
+        @include size(70vw,50vh);
+        @include gridProp(normal,normal,center);
         background-color: #fffb0011;
         border: 1px solid rgba(0, 0, 0, 0.178);
         border-radius: 10px;
@@ -12,11 +10,20 @@
         grid-template-rows: repeat(3,1fr);
         grid-template-areas: 
         "ec  ec   ec   ec   .     fe    fe    fe    .     ho   ho   ho"
-        ".   .    .    .    .     tr    tr    tr    tr    pt   pt   pt"
+        "ec  ec   ec   ec   .     tr    tr    tr    tr    pt   pt   pt"
         ".   .    .    .    .     .     .     .     .     re   re   re";
         .caja{
-            margin: 10px;
+            margin: 15px;
+            h4{
+                @include fontProp($fontPoppins,normal,600,10px,black);
+            }      
         }
+
+        // @each $gridContacto in tel1,tel2,tel3,wapp,wapp1,email,email1{
+        //     .#{$gridContacto}{
+        //         grid-area:$gridContacto;
+        //     }
+        // }
         .elijaCancha{
             grid-area: ec;
         }
@@ -33,14 +40,13 @@
             grid-area: pt;
         }
         .reservar{
-            margin-top: 26%;
-            margin-left: 10%;
             grid-area: re;
         }
         .form-select{
             margin-bottom: 10px;
         }
+        button{
+            @include size(85px,38px);
+        }
     }
 }
-
-

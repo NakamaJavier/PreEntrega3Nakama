@@ -128,9 +128,9 @@ body h3 {
   letter-spacing: 2px;
 }
 body p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   color: black;
   text-align: justify;
@@ -213,62 +213,73 @@ footer .redes .redesFlex .redes_icon {
   height: 32vw;
 }
 .carousel-width .carousel-caption h5 {
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.4196078431);
-  color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
+  color: white;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5215686275);
   text-align: center;
-  line-height: normal;
-  letter-spacing: normal;
-  word-spacing: normal;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
-.gridCenter {
+.flexCenter {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
-.gridCenter .gridContenedor {
+.flexCenter .gridContenedor {
   width: 70vw;
   height: 50vh;
   display: grid;
+  justify-content: normal;
+  align-items: normal;
+  justify-items: center;
   background-color: rgba(255, 251, 0, 0.0666666667);
   border: 1px solid rgba(0, 0, 0, 0.178);
   border-radius: 10px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "ec  ec   ec   ec   .     fe    fe    fe    .     ho   ho   ho" ".   .    .    .    .     tr    tr    tr    tr    pt   pt   pt" ".   .    .    .    .     .     .     .     .     re   re   re";
+  grid-template-areas: "ec  ec   ec   ec   .     fe    fe    fe    .     ho   ho   ho" "ec  ec   ec   ec   .     tr    tr    tr    tr    pt   pt   pt" ".   .    .    .    .     .     .     .     .     re   re   re";
 }
-.gridCenter .gridContenedor .caja {
-  margin: 10px;
+.flexCenter .gridContenedor .caja {
+  margin: 15px;
 }
-.gridCenter .gridContenedor .elijaCancha {
+.flexCenter .gridContenedor .caja h4 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  color: black;
+}
+.flexCenter .gridContenedor .elijaCancha {
   grid-area: ec;
 }
-.gridCenter .gridContenedor .fecha {
+.flexCenter .gridContenedor .fecha {
   grid-area: fe;
 }
-.gridCenter .gridContenedor .horario {
+.flexCenter .gridContenedor .horario {
   grid-area: ho;
 }
-.gridCenter .gridContenedor .tiempoReserva {
+.flexCenter .gridContenedor .tiempoReserva {
   grid-area: tr;
 }
-.gridCenter .gridContenedor .precioTotal {
+.flexCenter .gridContenedor .precioTotal {
   grid-area: pt;
 }
-.gridCenter .gridContenedor .reservar {
-  margin-top: 26%;
-  margin-left: 10%;
+.flexCenter .gridContenedor .reservar {
   grid-area: re;
 }
-.gridCenter .gridContenedor .form-select {
+.flexCenter .gridContenedor .form-select {
   margin-bottom: 10px;
+}
+.flexCenter .gridContenedor button {
+  width: 85px;
+  height: 38px;
 }
 
 .wrapper .gridContacto {
@@ -277,7 +288,7 @@ footer .redes .redesFlex .redes_icon {
   margin-top: 20px;
   grid-template-columns: 1fr 6fr;
   grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: "tel1   tel2" "tel1   tel3" "wapp  wapp1" "mail  mail1";
+  grid-template-areas: "tel1   tel2" "tel1   tel3" "wapp   wapp1" "email  email1";
   margin-bottom: 20px;
 }
 .wrapper .gridContacto .info_contacto {
@@ -292,24 +303,30 @@ footer .redes .redesFlex .redes_icon {
 .wrapper .gridContacto .tel3 {
   grid-area: tel3;
 }
-.wrapper .gridContacto .whatsapp {
+.wrapper .gridContacto .wapp {
   grid-area: wapp;
 }
-.wrapper .gridContacto .whatsapp1 {
+.wrapper .gridContacto .wapp1 {
   grid-area: wapp1;
 }
 .wrapper .gridContacto .email {
-  grid-area: mail;
+  grid-area: email;
 }
 .wrapper .gridContacto .email1 {
-  grid-area: mail1;
+  grid-area: email1;
 }
 .wrapper .ubicacion {
   display: grid;
   justify-items: center;
 }
 .wrapper .ubicacion h4 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: black;
   text-align: center;
+  margin: 10px;
 }
 .wrapper .ubicacion a {
   margin-top: 5px;
@@ -318,9 +335,10 @@ footer .redes .redesFlex .redes_icon {
 
 .gridProductos {
   display: grid;
-  width: 97%;
+  justify-content: center;
   align-items: center;
   justify-items: center;
+  width: 97%;
   margin-top: 20px;
   margin-left: 10px;
   grid-template-columns: repeat(8, 1fr);
@@ -328,8 +346,8 @@ footer .redes .redesFlex .redes_icon {
   grid-template-areas: "caja1 caja2  caja3  caja4  caja5  caja6  caja7  caja8 " "caja9 caja10 caja11 caja12 caja13 caja14 caja15    .  ";
 }
 .gridProductos img {
-  height: 180px;
   width: auto;
+  height: 180px;
   max-width: 150px;
   margin: 3px;
 }
@@ -338,41 +356,45 @@ footer .redes .redesFlex .redes_icon {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
+  color: #16256c;
   text-align: center;
   letter-spacing: 2px;
-  word-spacing: 0px;
-  color: #16256c;
+  margin: 0px 2px 0px 2px;
 }
 .gridProductos div h3 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 16px;
+  color: black;
   text-align: center;
   letter-spacing: 2px;
-  word-spacing: 0px;
-  color: #000000;
+  border-top: 1px solid rgba(0, 0, 0, 0.445);
+  padding-top: 4px;
+  width: 150px;
 }
 .gridProductos .caja_producto:hover {
   /* Agrego efecto de escalado a las cajas de producto*/
   scale: 130%;
 }
 .gridProductos .caja_producto .box_venta {
-  background-color: white;
-  height: 270px;
-  width: 200px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
   display: grid;
-  align-items: start;
-  justify-content: normal;
-  grid-template-rows: 186px 58px 26px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 200px;
+  height: 270px;
+  grid-template-rows: 183px 51px 35px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
   margin: 10px;
 }
 .gridProductos .caja_producto .box_venta .box_venta_img {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .gridProductos .caja1 {
   grid-area: caja1;
@@ -430,15 +452,15 @@ footer .redes .redesFlex .redes_icon {
 .flexNosotros .flexqs {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
+  align-items: center;
 }
 .flexNosotros .flexnc {
   margin-top: 3vw;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
 }
 .flexNosotros .textns {
   width: 33%;
@@ -545,14 +567,17 @@ footer .redes .redesFlex .redes_icon {
     grid-template-areas: "caja1  caja2  caja3 " "caja4  caja5  caja6 " "caja7  caja8  caja9 " "caja10 caja11 caja12" "caja13 caja14 caja15";
   }
   /*para reserva*/
-  .gridCenter .gridContenedor {
+  .flexCenter .gridContenedor {
     width: 80vw;
-    height: 50vh;
-    display: grid;
+    height: 70vh;
+    margin-bottom: 10px;
     background-color: rgba(255, 251, 0, 0.0666666667);
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "ec  ec   ec   .  " "fe  fe   ho   ho " "tr  tr   tr    . " "pt  pt   .     re";
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "ec  ec   .    .  " "ec  ec   .    .  " "fe  fe   ho   ho " "tr  tr   .    .  " "pt  pt   .    re ";
+  }
+  .flexCenter .gridContenedor .reservar {
+    margin-top: 37px;
   }
 }
 @media screen and (max-width: 675px) {
@@ -562,10 +587,6 @@ footer .redes .redesFlex .redes_icon {
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "caja1  caja2 " "caja3  caja4 " "caja5  caja6 " "caja7  caja8 " "caja9  caja10" "caja11 caja12" "caja13 caja14" "caja15    .  ";
   }
-  /*para reserva*/
-  .gridCenter .gridContenedor .reservar {
-    margin-top: 33%;
-  }
 }
 @media screen and (max-width: 455px) {
   /*para productos*/
@@ -574,13 +595,15 @@ footer .redes .redesFlex .redes_icon {
     margin-left: 3px;
   }
   .gridProductos .caja_producto .box_venta {
-    height: 270px;
     width: 170px;
+    height: 270px;
     margin: 2px;
     margin-bottom: 10px;
   }
-  /*para reserva*/
-  .gridCenter .gridContenedor .reservar {
-    margin-top: 35%;
+  .gridProductos div h2 {
+    font-size: 17px;
+  }
+  .gridProductos div h3 {
+    width: 127px;
   }
 }/*# sourceMappingURL=estilo.css.map */

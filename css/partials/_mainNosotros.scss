@@ -2,17 +2,11 @@
     margin-top: 40px;
     margin-bottom: 40px;
     .flexqs{
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
+        @include flexProp(row,flex-start,center);
     }
     .flexnc{
         margin-top: 3vw;
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
+        @include flexProp(row,flex-end,center);
     }
     .textns{
         width: 33%;

@@ -27,7 +27,7 @@ body{
         
     }
     p{
-        @include fontProp($fontRoboto,normal,600,18px,black);
+        @include fontProp($fontNoto,normal,500,18px,black);
         text-align: justify;
         line-height: 20px;
         margin: 15px;

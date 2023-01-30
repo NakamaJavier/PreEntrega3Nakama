@@ -117,20 +117,26 @@
         "caja13 caja14 caja15";
     }
     /*para reserva*/
-    .gridCenter{
+    .flexCenter{
         .gridContenedor{
             width: 80vw;
-            height: 50vh;
-            display: grid;
+            height: 70vh;
+            margin-bottom: 10px;
             background-color: #fffb0011;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(4,1fr);
+            grid-template-rows: repeat(5,1fr);
             grid-template-areas: 
-            "ec  ec   ec   .  "
+            "ec  ec   .    .  "
+            "ec  ec   .    .  "
             "fe  fe   ho   ho "
-            "tr  tr   tr    . "
-            "pt  pt   .     re";
+            "tr  tr   .    .  "
+            "pt  pt   .    re ";
         }
+        .gridContenedor{
+            .reservar{
+                margin-top: 37px;
+            }
+        } 
     }
 }
 
@@ -149,14 +155,6 @@
         "caja13 caja14"
         "caja15    .  ";      
     }
-    /*para reserva*/
-    .gridCenter{
-        .gridContenedor{
-            .reservar{
-                margin-top: 33%;
-            }
-        } 
-    }
 }
 
 @media screen and (max-width: 455px){
@@ -164,20 +162,18 @@
     .gridProductos{  
         margin-top: 20px;
         margin-left: 3px;
-        
-    }
-    .gridProductos .caja_producto .box_venta{
-        height: 270px;
-        width: 170px;
-        margin: 2px;
-        margin-bottom: 10px;
-    }
-    /*para reserva*/
-    .gridCenter{
-        .gridContenedor{
-            .reservar{
-                margin-top: 35%;
+        .caja_producto .box_venta{
+            @include size(170px,270px);
+            margin: 2px;
+            margin-bottom: 10px;
+        }
+        div{
+            h2{
+                font-size: 17px;
             }
-        } 
+            h3{
+                width:127px;
+            }
+        }
     }
 }

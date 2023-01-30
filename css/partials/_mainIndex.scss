@@ -9,17 +9,10 @@
         }
     .carousel-caption{
         h5{
+            @include fontProp($fontRoboto,normal,500,18px,white);
             margin:auto;
-            background-color: #0000006b;
-            color: #ffffff;
-            font-family: 'Roboto', sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
+            background-color: #00000085;
             text-align: center;
-            line-height: normal;
-            letter-spacing: normal;
-            word-spacing: normal;
             width:max-content;
         }
     }

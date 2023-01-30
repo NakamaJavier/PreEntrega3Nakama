@@ -24,6 +24,12 @@ $hColor: #12708d;
     justify-content: $jcontent;
     align-items: $aitems;
 }
+@mixin gridProp($jcontent,$aitems,$jitems){
+    display: grid;
+    justify-content: $jcontent;
+    align-items: $aitems;
+    justify-items: $jitems;
+}
 @mixin size($width,$height){
     width: $width;
     height: $height;
