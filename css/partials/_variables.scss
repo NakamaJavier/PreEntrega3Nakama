@@ -18,3 +18,49 @@ $hColor: #12708d;
     font-size: $size;
     color: $color;
 }
+@mixin flexProp($fdirection,$jcontent,$aitems){
+    display: flex;
+    flex-direction: $fdirection;
+    justify-content: $jcontent;
+    align-items: $aitems;
+}
+@mixin size($width,$height){
+    width: $width;
+    height: $height;
+}
+
+
+@keyframes showRight {
+    0% {
+        transform:scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes backInRight{
+    0%{
+        -webkit-transform:translateX(2000px) scale(.7);transform:translateX(2000px) scale(.7);opacity:.7
+    }
+    80%{
+        -webkit-transform:translateX(0) scale(.7);transform:translateX(0) scale(.7);opacity:.7
+    }
+    to{
+        -webkit-transform:scale(1);transform:scale(1);opacity:1
+    }
+}
+
+@keyframes backInLeft{
+    0%{
+        -webkit-transform:translateX(-2000px) scale(.7);transform:translateX(-2000px) scale(.7);opacity:.7
+    }
+    80%{
+        -webkit-transform:translateX(0) scale(.7);transform:translateX(0) scale(.7);opacity:.7
+    }
+    to{
+        -webkit-transform:scale(1);transform:scale(1);opacity:1
+    }
+}

@@ -73,9 +73,9 @@
     /*para index */
     .carousel-width{
         width: 100vw;
-    }
-    .carousel img{
-        height: 40vw;
+        img{
+            height: 40vw;
+        }
     }
     /*para nosotros */
     .flexNosotros{
@@ -117,20 +117,21 @@
         "caja13 caja14 caja15";
     }
     /*para reserva*/
-    .gridContenedor{
-        width: 80vw;
-        height: 50vh;
-        display: grid;
-        background-color: #fffb0011;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4,1fr);
-        grid-template-areas: 
-        "ec  ec   ec   .  "
-        "fe  fe   ho   ho "
-        "tr  tr   tr    . "
-        "pt  pt   .     re";
+    .gridCenter{
+        .gridContenedor{
+            width: 80vw;
+            height: 50vh;
+            display: grid;
+            background-color: #fffb0011;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4,1fr);
+            grid-template-areas: 
+            "ec  ec   ec   .  "
+            "fe  fe   ho   ho "
+            "tr  tr   tr    . "
+            "pt  pt   .     re";
+        }
     }
-    
 }
 
 @media screen and (max-width: 675px){
@@ -149,8 +150,12 @@
         "caja15    .  ";      
     }
     /*para reserva*/
-    .reservar{
-        margin-top: 33%;
+    .gridCenter{
+        .gridContenedor{
+            .reservar{
+                margin-top: 33%;
+            }
+        } 
     }
 }
 
@@ -161,14 +166,18 @@
         margin-left: 3px;
         
     }
-    .box_venta{
+    .gridProductos .caja_producto .box_venta{
         height: 270px;
         width: 170px;
         margin: 2px;
         margin-bottom: 10px;
     }
     /*para reserva*/
-    .reservar{
-        margin-top: 35%;
+    .gridCenter{
+        .gridContenedor{
+            .reservar{
+                margin-top: 35%;
+            }
+        } 
     }
 }

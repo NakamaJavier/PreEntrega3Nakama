@@ -6,6 +6,8 @@
         height: 50vh;
         display: grid;
         background-color: #fffb0011;
+        border: 1px solid rgba(0, 0, 0, 0.178);
+        border-radius: 10px;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3,1fr);
         grid-template-areas: 
@@ -34,6 +36,9 @@
             margin-top: 26%;
             margin-left: 10%;
             grid-area: re;
+        }
+        .form-select{
+            margin-bottom: 10px;
         }
     }
 }
