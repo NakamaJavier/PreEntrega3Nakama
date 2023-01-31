@@ -75,6 +75,16 @@
     opacity: 1;
   }
 }
+.ubicacion h4, .col-md-6 h4 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  color: black;
+  text-align: center;
+  margin: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -185,7 +195,7 @@ footer .redes h2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 600px;
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   text-align: center;
   margin: 0px;
@@ -255,6 +265,7 @@ footer .redes .redesFlex .redes_icon {
   font-weight: 400;
   font-size: 12px;
   color: black;
+  margin-left: 5px;
 }
 .flexCenter .gridContenedor .elijaCancha {
   grid-area: ec;
@@ -282,7 +293,7 @@ footer .redes .redesFlex .redes_icon {
   height: 38px;
 }
 
-.wrapper .gridContacto {
+.gridContacto {
   display: grid;
   align-items: center;
   margin-top: 20px;
@@ -291,46 +302,44 @@ footer .redes .redesFlex .redes_icon {
   grid-template-areas: "tel1   tel2" "tel1   tel3" "wapp   wapp1" "email  email1";
   margin-bottom: 20px;
 }
-.wrapper .gridContacto .info_contacto {
+.gridContacto .info_contacto {
   margin: 5px;
 }
-.wrapper .gridContacto .tel1 {
+.gridContacto .tel1 {
   grid-area: tel1;
 }
-.wrapper .gridContacto .tel2 {
+.gridContacto .tel2 {
   grid-area: tel2;
 }
-.wrapper .gridContacto .tel3 {
+.gridContacto .tel3 {
   grid-area: tel3;
 }
-.wrapper .gridContacto .wapp {
+.gridContacto .wapp {
   grid-area: wapp;
 }
-.wrapper .gridContacto .wapp1 {
+.gridContacto .wapp1 {
   grid-area: wapp1;
 }
-.wrapper .gridContacto .email {
+.gridContacto .email {
   grid-area: email;
 }
-.wrapper .gridContacto .email1 {
+.gridContacto .email1 {
   grid-area: email1;
 }
-.wrapper .ubicacion {
+
+.ubicacion {
   display: grid;
   justify-items: center;
 }
-.wrapper .ubicacion h4 {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  color: black;
-  text-align: center;
-  margin: 10px;
-}
-.wrapper .ubicacion a {
+.ubicacion a {
   margin-top: 5px;
+  margin-bottom: 5px;
   font-weight: 700;
+  font-size: 18px;
+}
+.ubicacion iframe {
+  width: 60vw;
+  height: 40vw;
 }
 
 .gridProductos {
@@ -580,6 +589,11 @@ footer .redes .redesFlex .redes_icon {
   .flexCenter .gridContenedor .reservar {
     margin-top: 41px;
   }
+  /*para contacto */
+  .ubicacion iframe {
+    width: 80vw;
+    height: 50vw;
+  }
 }
 @media screen and (max-width: 675px) {
   /*para productos*/
@@ -587,6 +601,11 @@ footer .redes .redesFlex .redes_icon {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "caja1  caja2 " "caja3  caja4 " "caja5  caja6 " "caja7  caja8 " "caja9  caja10" "caja11 caja12" "caja13 caja14" "caja15    .  ";
+  }
+  /*para contacto */
+  .ubicacion iframe {
+    width: 90vw;
+    height: 55vw;
   }
 }
 @media screen and (max-width: 455px) {

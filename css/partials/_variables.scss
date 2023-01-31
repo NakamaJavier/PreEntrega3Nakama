@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,700&family=Poppins:ital@1&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
+//////////////Definicion de etiquetas://////////////
+
 $fontNoto: 'Noto Sans', sans-serif;
 $fontPoppins: 'Poppins', sans-serif;
 $fontRoboto:'Roboto', sans-serif;
+
+//etiquetas para colores del sitio
 $hColor: #12708d;
+$footerColor:rgb(52, 104, 90);
+$bodyColor:#f1fff0;
+$navbarColor1:#03a120;
+$navbarColor2:#f0eb30;
+
+//////////////Definicion de Map://////////////
 
 $reserva:(
     elijaCancha: ec,
@@ -14,12 +24,17 @@ $reserva:(
     reservar: re,
 );
 
+//////////////Definicion de mixin://////////////
+
+//sin parametros
 @mixin fontTitles{
     font-family:$fontNoto;
     font-style:normal;
     text-align:center;
     color: $hColor;
 }
+
+//con parametros
 @mixin fontProp($family,$style,$weight,$size,$color){
     font-family: $family;
     font-style: $style;
@@ -27,6 +42,12 @@ $reserva:(
     font-size: $size;
     color: $color;
 }
+@mixin size($width,$height){
+    width: $width;
+    height: $height;
+}
+
+//mixtos
 @mixin flexProp($fdirection,$jcontent,$aitems){
     display: flex;
     flex-direction: $fdirection;
@@ -39,11 +60,8 @@ $reserva:(
     align-items: $aitems;
     justify-items: $jitems;
 }
-@mixin size($width,$height){
-    width: $width;
-    height: $height;
-}
 
+//////////////Definicion de Keyframes para animaciones//////////////
 
 @keyframes showRight {
     0% {
@@ -78,4 +96,12 @@ $reserva:(
     to{
         -webkit-transform:scale(1);transform:scale(1);opacity:1
     }
+}
+
+//////////////Definicion de PlaceHolder://////////////
+
+%h4Contacto{
+    @include fontProp($fontRoboto,normal,500,27px,black);
+            text-align: center;
+            margin: 10px;
 }

@@ -1,36 +1,42 @@
-.wrapper{
-    .gridContacto{
-        display: grid;
-        align-items: center;  
-        margin-top: 20px;
-        grid-template-columns: 1fr 6fr;
-        grid-template-rows: repeat(4,1fr);
-        grid-template-areas: 
-        "tel1   tel2"
-        "tel1   tel3"
-        "wapp   wapp1"
-        "email  email1";
-        margin-bottom: 20px;
-        .info_contacto{
-            margin:5px;
-        }
-        @each $gridContacto in tel1,tel2,tel3,wapp,wapp1,email,email1{
-            .#{$gridContacto}{
-                grid-area:$gridContacto;
-            }
+.gridContacto{
+    display: grid;
+    align-items: center;  
+    margin-top: 20px;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "tel1   tel2"
+    "tel1   tel3"
+    "wapp   wapp1"
+    "email  email1";
+    margin-bottom: 20px;
+    .info_contacto{
+        margin:5px;
+    }
+    @each $gridContacto in tel1,tel2,tel3,wapp,wapp1,email,email1{
+        .#{$gridContacto}{
+            grid-area:$gridContacto;
         }
     }
-    .ubicacion{
-        display: grid;
-        justify-items: center;
-        h4{
-            @include fontProp($fontRoboto,normal,500,30px,black);
-            text-align: center;
-            margin: 10px;
-        }
-        a{
-            margin-top: 5px;
-            font-weight: 700;
-        }
+}
+.col-md-6{
+    h4{
+        @extend %h4Contacto;
+    }
+}
+.ubicacion{
+    display: grid;
+    justify-items: center;
+    h4{
+        @extend %h4Contacto;
+    }
+    a{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 18px,
+    }
+    iframe{
+        @include size(60vw,40vw);
     }
 }

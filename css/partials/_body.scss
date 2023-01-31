@@ -1,6 +1,6 @@
 // Configuración de etiquetas generales dentro del body
 body{
-    background-color: #f1fff0;
+    background-color: $bodyColor;
     @include flexProp(column,normal,normal);
     min-height:100vh;
 

@@ -16,6 +16,7 @@
             margin: 15px;
             h4{
                 @include fontProp($fontNoto,italic,400,12px,black);
+                margin-left: 5px;
             }      
         }
         @each $classReserva,$gaReserva in $reserva{

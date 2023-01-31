@@ -4,7 +4,7 @@ header{
         font-weight: bolder;
         color: rgb(0, 0, 0);
         margin-bottom: 30px;
-        background: linear-gradient(11deg, #03a120 60%, #f0eb30);
+        background: linear-gradient(11deg, $navbarColor1 60%, $navbarColor2);
         .varlogo{
             width: 110px;
             background-color:rgba(0, 0, 0, 0.010);

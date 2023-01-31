@@ -1,9 +1,9 @@
 footer{
     list-style-type: none;
     .redes{
-        background-color: rgb(52, 104, 90);
+        background-color: $footerColor;
         h2{
-            @include fontProp($fontRoboto,normal,600px,20px,white);
+            @include fontProp($fontRoboto,normal,600px,18px,white);
             text-align: center;
             margin: 0px;
         }

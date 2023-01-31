@@ -139,6 +139,12 @@
             }
         } 
     }
+    /*para contacto */
+    .ubicacion{
+        iframe{
+            @include size(80vw,50vw);
+        }
+    }
 }
 
 @media screen and (max-width: 675px){
@@ -155,6 +161,12 @@
         "caja11 caja12"
         "caja13 caja14"
         "caja15    .  ";      
+    }
+    /*para contacto */
+    .ubicacion{
+        iframe{
+            @include size(90vw,55vw);
+        }
     }
 }
 
