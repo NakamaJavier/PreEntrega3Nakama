@@ -5,6 +5,15 @@ $fontPoppins: 'Poppins', sans-serif;
 $fontRoboto:'Roboto', sans-serif;
 $hColor: #12708d;
 
+$reserva:(
+    elijaCancha: ec,
+    fecha: fe,
+    horario: ho,
+    tiempoReserva: tr,
+    precioTotal: pt,
+    reservar: re,
+);
+
 @mixin fontTitles{
     font-family:$fontNoto;
     font-style:normal;

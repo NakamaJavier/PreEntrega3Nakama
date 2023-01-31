@@ -119,22 +119,23 @@
     /*para reserva*/
     .flexCenter{
         .gridContenedor{
-            width: 80vw;
-            height: 70vh;
+            width: 85vw;
+            height: 425px;
             margin-bottom: 10px;
             background-color: #fffb0011;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(5,1fr);
             grid-template-areas: 
-            "ec  ec   .    .  "
-            "ec  ec   .    .  "
-            "fe  fe   ho   ho "
-            "tr  tr   .    .  "
-            "pt  pt   .    re ";
+            "ec  ec   ec   .  "
+            "ec  ec   ec   .  "
+            "fe  fe   fe   ho "
+            "tr  tr   tr   .  "
+            "pt  pt   pt   re ";
+            justify-items: normal;
         }
         .gridContenedor{
             .reservar{
-                margin-top: 37px;
+                margin-top: 41px;
             }
         } 
     }

@@ -15,32 +15,13 @@
         .caja{
             margin: 15px;
             h4{
-                @include fontProp($fontPoppins,normal,600,10px,black);
+                @include fontProp($fontNoto,italic,400,12px,black);
             }      
         }
-
-        // @each $gridContacto in tel1,tel2,tel3,wapp,wapp1,email,email1{
-        //     .#{$gridContacto}{
-        //         grid-area:$gridContacto;
-        //     }
-        // }
-        .elijaCancha{
-            grid-area: ec;
-        }
-        .fecha{
-            grid-area: fe
-        }
-        .horario{
-            grid-area: ho;
-        }
-        .tiempoReserva{
-            grid-area: tr;
-        }
-        .precioTotal{
-            grid-area: pt;
-        }
-        .reservar{
-            grid-area: re;
+        @each $classReserva,$gaReserva in $reserva{
+            .#{$classReserva}{
+                grid-area: $gaReserva;
+            }
         }
         .form-select{
             margin-bottom: 10px;
