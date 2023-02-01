@@ -11,7 +11,37 @@ footer{
             @include flexProp(row,space-around,normal);
             .redes_icon{
                 @include size(48px,48x);
+                
+                
+            }
+            a{
+                // &:hover{
+                //     animation: efecto 2s ease-out forwards;
+                // }
+                &:before, &:after{
+                    position: absolute;
+                    content: '';
+                    opacity: 0;
+                    transition: all 5s ease;
+                    margin: 0px 0px 0px 0px;
+                }
+                &:before{
+                    padding: 22px 22px;
+                    background: blue;
+                    border-radius: 100%;
+                }
+                &:hover::before{
+                    opacity: 1;
+                }
             }
         }
+    }
+}
+@keyframes efecto{
+    0%{
+        transform:translateX(0px) scale(1);opacity:.7
+    }
+    100%{
+        transform:translateX(-100px) scale(1);opacity:1
     }
 }
