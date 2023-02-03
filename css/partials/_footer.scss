@@ -11,7 +11,7 @@ footer{
         }
         .redesFlex{
             @include flexProp(row,space-around,normal);
-            
+            margin-left: 10.5vw;
             .redes_icon{
                 @include size(48px,48x);
                     text-decoration: none;                   
@@ -19,8 +19,8 @@ footer{
             .face{
                 text-decoration: none;  
                 &:after{
-                    position: absolute;
-                    top:10px;
+                    position: relative;
+                    top:3px;
                     content: 'facebook/VarPadel';
                     font-size: 20px;
                     font-weight: 600;
@@ -41,14 +41,14 @@ footer{
                 @extend .face;
                 &:after{
                     content: 'instagram/VarPadel';
-                    top:8px;
+                    top:2px;
                 }
             }
             .twitter{
                 @extend .face;
                 &:after{
                     content: 'twitter/VarPadel';
-                    top:8px;
+                    top:2px;
                 }
             }
         }
@@ -59,6 +59,6 @@ footer{
         transform:translateX(0px) scale(1)
     }
     100%{
-        transform:translateX(-9vw) scale(1)
+        transform:translateX(-6vw) scale(1)
     }
 }

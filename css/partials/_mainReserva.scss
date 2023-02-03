@@ -10,7 +10,7 @@
         grid-template-rows: repeat(3,1fr);
         grid-template-areas: 
         "ec  ec   ec   ec   .     fe    fe    fe    .     ho   ho   ho"
-        "ec  ec   ec   ec   .     tr    tr    tr    tr    pt   pt   pt"
+        "ec  ec   ec   ec   .     tr    tr    tr    .     pt   pt   pt"
         ".   .    .    .    .     .     .     .     .     re   re   re";
         .caja{
             margin: 15px;

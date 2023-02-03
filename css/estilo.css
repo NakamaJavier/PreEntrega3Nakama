@@ -208,6 +208,7 @@ footer .redes .redesFlex {
   flex-direction: row;
   justify-content: space-around;
   align-items: normal;
+  margin-left: 10.5vw;
 }
 footer .redes .redesFlex .redes_icon {
   width: 48px;
@@ -218,8 +219,8 @@ footer .redes .redesFlex .face, footer .redes .redesFlex .twitter, footer .redes
   text-decoration: none;
 }
 footer .redes .redesFlex .face:after, footer .redes .redesFlex .twitter:after, footer .redes .redesFlex .insta:after {
-  position: absolute;
-  top: 10px;
+  position: relative;
+  top: 3px;
   content: "facebook/VarPadel";
   font-size: 20px;
   font-weight: 600;
@@ -237,11 +238,11 @@ footer .redes .redesFlex .face:hover::after, footer .redes .redesFlex .twitter:h
 }
 footer .redes .redesFlex .insta:after {
   content: "instagram/VarPadel";
-  top: 8px;
+  top: 2px;
 }
 footer .redes .redesFlex .twitter:after {
   content: "twitter/VarPadel";
-  top: 8px;
+  top: 2px;
 }
 
 @-webkit-keyframes efecto {
@@ -249,7 +250,7 @@ footer .redes .redesFlex .twitter:after {
     transform: translateX(0px) scale(1);
   }
   100% {
-    transform: translateX(-9vw) scale(1);
+    transform: translateX(-6vw) scale(1);
   }
 }
 
@@ -258,7 +259,7 @@ footer .redes .redesFlex .twitter:after {
     transform: translateX(0px) scale(1);
   }
   100% {
-    transform: translateX(-9vw) scale(1);
+    transform: translateX(-6vw) scale(1);
   }
 }
 .carousel-width {
@@ -308,7 +309,7 @@ footer .redes .redesFlex .twitter:after {
   border-radius: 10px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "ec  ec   ec   ec   .     fe    fe    fe    .     ho   ho   ho" "ec  ec   ec   ec   .     tr    tr    tr    tr    pt   pt   pt" ".   .    .    .    .     .     .     .     .     re   re   re";
+  grid-template-areas: "ec  ec   ec   ec   .     fe    fe    fe    .     ho   ho   ho" "ec  ec   ec   ec   .     tr    tr    tr    .     pt   pt   pt" ".   .    .    .    .     .     .     .     .     re   re   re";
 }
 .flexCenter .gridContenedor .caja {
   margin: 15px;
