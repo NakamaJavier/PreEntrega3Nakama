@@ -29,7 +29,8 @@ body{
     p{
         @include fontProp($fontNoto,normal,500,18px,black);
         text-align: justify;
-        line-height: 20px;
-        margin: 15px;
+        text-indent: 25px;
+        margin-bottom: 0px;
+        line-height: 18px;
     }
 }

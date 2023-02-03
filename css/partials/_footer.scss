@@ -2,17 +2,63 @@ footer{
     list-style-type: none;
     .redes{
         background-color: $footerColor;
+        padding-bottom: 5px;
         h2{
             @include fontProp($fontRoboto,normal,600px,18px,white);
             text-align: center;
-            margin: 0px;
+            padding: 5px 0px 0px 0px;
+            margin: 0em;
         }
         .redesFlex{
             @include flexProp(row,space-around,normal);
             
             .redes_icon{
                 @include size(48px,48x);
+                    text-decoration: none;                   
+            }
+            .face{
+                text-decoration: none;  
+                &:after{
+                    position: absolute;
+                    top:10px;
+                    content: 'facebook/VarPadel';
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: white;
+                    text-align: center;
+                    opacity: 0;
+                }                              
+                &:hover{
+                    animation: efecto 2s ease-out both;
+                    &::after{
+                        opacity: 1;
+                        transition: opacity 2s ease-in-out 0.4s;
+                    }
+                }
+                
+            }
+            .insta{
+                @extend .face;
+                &:after{
+                    content: 'instagram/VarPadel';
+                    top:8px;
+                }
+            }
+            .twitter{
+                @extend .face;
+                &:after{
+                    content: 'twitter/VarPadel';
+                    top:8px;
+                }
             }
         }
+    }
+}
+@keyframes efecto{
+    0%{
+        transform:translateX(0px) scale(1)
+    }
+    100%{
+        transform:translateX(-9vw) scale(1)
     }
 }

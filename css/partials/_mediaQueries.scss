@@ -168,6 +168,24 @@
             @include size(90vw,55vw);
         }
     }
+    /*para footer*/
+    footer{
+        .redes{
+            .redesFlex{
+                .face,.insta,.twitter{
+                    &:hover{
+                        transition: none;
+                        animation: none;
+                        &::after{
+                            transition: none;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 455px){
