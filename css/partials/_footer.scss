@@ -11,7 +11,7 @@ footer{
         }
         .redesFlex{
             @include flexProp(row,space-around,normal);
-            margin-left: 8.5vw;
+            margin-left: 150px;
             .redes_icon{
                 @include size(48px,48x);
                     text-decoration: none;                   

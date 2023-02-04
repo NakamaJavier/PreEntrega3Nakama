@@ -101,6 +101,27 @@
                 object-fit: cover;
             }
         }
+    }
+    /*para footer*/
+    footer{
+        .redes{
+            .redesFlex{
+                margin:0px;
+                .face,.insta,.twitter{
+                    &::after{
+                        content: '';
+                    }
+                    &:hover{
+                        transition: none;
+                        animation: none;
+                        &::after{
+                            transition: none;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
     } 
 }
 
@@ -166,23 +187,6 @@
     .ubicacion{
         iframe{
             @include size(90vw,55vw);
-        }
-    }
-    /*para footer*/
-    footer{
-        .redes{
-            .redesFlex{
-                .face,.insta,.twitter{
-                    &:hover{
-                        transition: none;
-                        animation: none;
-                        &::after{
-                            transition: none;
-                            opacity: 0;
-                        }
-                    }
-                }
-            }
         }
     }
 

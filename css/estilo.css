@@ -208,7 +208,7 @@ footer .redes .redesFlex {
   flex-direction: row;
   justify-content: space-around;
   align-items: normal;
-  margin-left: 8.5vw;
+  margin-left: 150px;
 }
 footer .redes .redesFlex .redes_icon {
   width: 48px;
@@ -625,6 +625,22 @@ footer .redes .redesFlex .twitter:after {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  /*para footer*/
+  footer .redes .redesFlex {
+    margin: 0px;
+  }
+  footer .redes .redesFlex .face::after, footer .redes .redesFlex .insta::after, footer .redes .redesFlex .twitter::after {
+    content: "";
+  }
+  footer .redes .redesFlex .face:hover, footer .redes .redesFlex .insta:hover, footer .redes .redesFlex .twitter:hover {
+    transition: none;
+    -webkit-animation: none;
+            animation: none;
+  }
+  footer .redes .redesFlex .face:hover::after, footer .redes .redesFlex .insta:hover::after, footer .redes .redesFlex .twitter:hover::after {
+    transition: none;
+    opacity: 0;
+  }
 }
 @media screen and (max-width: 890px) {
   /*para productos*/
@@ -664,16 +680,6 @@ footer .redes .redesFlex .twitter:after {
   .ubicacion iframe {
     width: 90vw;
     height: 55vw;
-  }
-  /*para footer*/
-  footer .redes .redesFlex .face:hover, footer .redes .redesFlex .insta:hover, footer .redes .redesFlex .twitter:hover {
-    transition: none;
-    -webkit-animation: none;
-            animation: none;
-  }
-  footer .redes .redesFlex .face:hover::after, footer .redes .redesFlex .insta:hover::after, footer .redes .redesFlex .twitter:hover::after {
-    transition: none;
-    opacity: 0;
   }
 }
 @media screen and (max-width: 455px) {
